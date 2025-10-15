@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Julia de Oliveira Dias</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #ecf0f1;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;       /* mantém proporção original */
+      object-fit: contain;
+      background: #f8f8f8;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #2c3e50;
+    }
+
+    .card p {
+      margin: 12px 0 20px;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .card a {
+      display: inline-block;
+      text-decoration: none;
+      background: #34495e;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #2c3e50;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #ecf0f1;
+      color: #555;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Julia de Oliveira Dias</h1>
+    <p>Portfólio de Projetos em Machine Learning e Data Science</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <img src="images/comparacao_mascara_2 (1).png" alt="Imagem do projeto de segmentação de tumores em imagens médicas">
+      <div class="card-content">
+        <h2>Segmentação de Tumores em Imagens Médicas</h2>
+        <p>Modelo de segmentação de imagens que identifica e delimita tumores em imagens médicas, auxiliando no diagnóstico precoce de doenças.</p>
+        <a href="https://github.com/juliaOdias/tcc-segmentacao-tumores" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/CurvaROCDiabetes.png" alt="Imagem do projeto de previsão de diabetes">
+      <div class="card-content">
+        <h2>Previsão de Diabetes</h2>
+        <p>Modelo de Machine Learning que prevê a probabilidade de um paciente desenvolver diabetes com base em fatores como idade, índice de massa corporal e histórico familiar.</p>
+        <a href="https://github.com/juliaOdias/Previsao-de-Diabetes" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/matrizConfSentimentos.png" alt="Imagem do projeto de classificação de sentimentos em tweets">
+      <div class="card-content">
+        <h2>Classificação de Sentimentos em Tweets</h2>
+        <p>Este projeto tem como objetivo classificar emoções em frases curtas, como tweets, utilizando técnicas de Machine Learning. O modelo identifica oito categorias de emoção: anger (raiva), disgust (nojo), fear (medo), joy (alegria), neutral (neutro), sadness (tristeza), shame (vergonha) e surprise (surpresa).</p>
+        <a href="https://github.com/juliaOdias/Analise-de-Sentimentos" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/featuresEnergia.png" alt="Imagem do projeto de previsão de consumo de energia elétrica">
+      <div class="card-content">
+        <h2>Previsão de Consumo de Energia Elétrica</h2>
+        <p>Este projeto tem como objetivo prever o consumo de energia elétrica com base em dados históricos, utilizando técnicas de Machine Learning. A ideia é treinar um modelo que aprenda os padrões de consumo de energia e consiga estimar a demanda futura</p>
+        <a href="https://github.com/juliaOdias/Previs-o-de-Demanda-Energia-Eletrica" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/graficoPrecoCasas.png" alt="Imagem do projeto de previsão de preços de casas na Califórnia">
+      <div class="card-content">
+        <h2>Previsão de Preços de Casas na Califórnia</h2>
+        <p>Projeto de regressão que prevê o preço de uma casa com base em características como renda mediana, idade da casa, número de quartos, população e localização geográfica.</p>
+        <a href="https://github.com/juliaOdias/Previsao-de-Precos-de-Casas-ML" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/imagemRoupas.png" alt="Imagem do projeto de classificação de imagens com Fashion MNIST">
+      <div class="card-content">
+        <h2>Classificação de Imagens com Fashion MNIST</h2>
+        <p>Modelo de Machine Learning que classifica imagens de roupas em categorias como camiseta, calça, vestido, entre outras, utilizando o dataset Fashion MNIST.</p>
+        <a href="https://github.com/juliaOdias/Classifica-o-de-imagens-com-Fashion-MNIST." target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/MatrizConfFakeNews.png" alt="Imagem do projeto de detecção de fake news">
+      <div class="card-content">
+        <h2>Detecção de Fake News</h2>
+        <p>Modelo de Machine Learning que classifica notícias como falsas ou verdadeiras com base em características linguísticas e contextuais.</p>
+        <a href="https://github.com/juliaOdias/Fake-News-Detection" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="images/previsaobolsa.png" alt="Imagem do projeto de segmentação de tumores em imagens médicas">
+      <div class="card-content">
+        <h2>Previsão de Preços de Ações</h2>
+        <p>Este projeto aplica uma rede neural LSTM para prever o preço de fechamento diário da ação Apple (AAPL). O objetivo é demonstrar como modelos de séries temporais (LSTM) conseguem aprender padrões históricos e prever movimentos de curto prazo no mercado.</p>
+        <a href="https://github.com/juliaOdias/Prever-fechamento-diario" target="_blank">Ver Projeto</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Julia • 2025</p>
+  </footer>
+</body>
+</html>
