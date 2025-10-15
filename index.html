@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Julia de Oliveira Dias</title>
+  <title>Portfolio - Julia de Oliveira Dias</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -40,6 +40,17 @@
       opacity: 0.85;
     }
 
+    .about-me {
+      margin-top: 20px;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
     main {
       max-width: 800px;
       margin: 40px auto;
@@ -62,7 +73,7 @@
 
     .card img {
       width: 100%;
-      height: auto;       /* mantém proporção original */
+      height: auto;
       object-fit: contain;
       background: #f8f8f8;
       display: block;
@@ -79,9 +90,14 @@
     }
 
     .card p {
-      margin: 12px 0 20px;
+      margin: 12px 0 10px;
       font-size: 1rem;
       line-height: 1.5;
+    }
+
+    .card ul {
+      margin: 10px 0 15px 20px;
+      padding: 0;
     }
 
     .card a {
@@ -113,86 +129,169 @@
 <body>
   <header>
     <h1>Julia de Oliveira Dias</h1>
-    <p>Portfólio de Projetos em Machine Learning e Data Science</p>
+    <p>Portfolio of Machine Learning and Data Science Projects</p>
+
+    <!-- About Me Section -->
+    <div class="about-me">
+      <p>
+        I’m a Computer Science student passionate about learning and exploring new technologies.  
+        I have hands-on experience in <strong>RPA, QA, and building applications with Python, JavaScript, HTML, and CSS</strong>.  
+        Currently, I’m diving deeper into <strong>Machine Learning</strong>, which is my focus area for the future.  
+        I’m also familiar with complementary tools and technologies such as <strong>APIs, databases, and system integration</strong>.  
+        I enjoy turning ideas into practical projects.
+      </p>
+    </div>
   </header>
 
   <main>
+    <!-- Project 1 -->
     <div class="card">
-      <img src="images/comparacao_mascara_2 (1).png" alt="Imagem do projeto de segmentação de tumores em imagens médicas">
+      <img src="images/comparacao_mascara_2 (1).png" alt="Medical image tumor segmentation project">
       <div class="card-content">
-        <h2>Segmentação de Tumores em Imagens Médicas</h2>
-        <p>Modelo de segmentação de imagens que identifica e delimita tumores em imagens médicas, auxiliando no diagnóstico precoce de doenças.</p>
-        <a href="https://github.com/juliaOdias/tcc-segmentacao-tumores" target="_blank">Ver Projeto</a>
+        <h2>Medical Image Tumor Segmentation</h2>
+        <p>An image segmentation model that identifies and outlines tumors in medical images, assisting in early disease diagnosis.</p>
+        <p><strong>Stack:</strong> Python, OpenCV, TensorFlow, Keras</p>
+        <ul>
+          <li>Developed a CNN model for precise tumor segmentation</li>
+          <li>Implemented data preprocessing and augmentation for medical images</li>
+          <li>Generated visual results for analysis and evaluation</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/tcc-segmentacao-tumores" target="_blank">View Project</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <img src="images/CurvaROCDiabetes.png" alt="Diabetes prediction project">
+      <div class="card-content">
+        <h2>Diabetes Prediction</h2>
+        <p>A Machine Learning model predicting the likelihood of a patient developing diabetes based on factors such as age, BMI, and family history.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, Pandas, Matplotlib</p>
+        <ul>
+          <li>Built classification models using Logistic Regression and Random Forest</li>
+          <li>Analyzed feature importance to improve model performance</li>
+          <li>Visualized ROC curves and metrics for evaluation</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Previsao-de-Diabetes" target="_blank">View Project</a>
       </div>
     </div>
 
     <div class="card">
-      <img src="images/CurvaROCDiabetes.png" alt="Imagem do projeto de previsão de diabetes">
+      <img src="images/pneumonia.png" alt="Pneumonia Detection Project"> <!-- Imagem vazia, você pode adicionar depois -->
       <div class="card-content">
-        <h2>Previsão de Diabetes</h2>
-        <p>Modelo de Machine Learning que prevê a probabilidade de um paciente desenvolver diabetes com base em fatores como idade, índice de massa corporal e histórico familiar.</p>
-        <a href="https://github.com/juliaOdias/Previsao-de-Diabetes" target="_blank">Ver Projeto</a>
+        <h2>Pneumonia Detection</h2>
+        <p>Machine learning project that detects pneumonia from chest X-ray images, aiming to assist medical diagnosis with automated image analysis.</p>
+        <p><strong>Stack:</strong> Python, TensorFlow, Keras, OpenCV, Pandas</p>
+        <p><strong>Highlights:</strong></p>
+        <ul>
+          <li>Developed a CNN model to classify X-ray images as pneumonia or normal</li>
+          <li>Implemented data preprocessing and augmentation for improved accuracy</li>
+          <li>Generated evaluation metrics and visualizations for model performance</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/deteccaopneumonia" target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 3 -->
     <div class="card">
-      <img src="images/matrizConfSentimentos.png" alt="Imagem do projeto de classificação de sentimentos em tweets">
+      <img src="images/matrizConfSentimentos.png" alt="Tweet sentiment analysis project">
       <div class="card-content">
-        <h2>Classificação de Sentimentos em Tweets</h2>
-        <p>Este projeto tem como objetivo classificar emoções em frases curtas, como tweets, utilizando técnicas de Machine Learning. O modelo identifica oito categorias de emoção: anger (raiva), disgust (nojo), fear (medo), joy (alegria), neutral (neutro), sadness (tristeza), shame (vergonha) e surprise (surpresa).</p>
-        <a href="https://github.com/juliaOdias/Analise-de-Sentimentos" target="_blank">Ver Projeto</a>
+        <h2>Tweet Sentiment Classification</h2>
+        <p>This project classifies emotions in short texts, such as tweets, using Machine Learning. The model identifies eight emotion categories: anger, disgust, fear, joy, neutral, sadness, shame, and surprise.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, NLTK, Pandas</p>
+        <ul>
+          <li>Preprocessed text data including tokenization and stopword removal</li>
+          <li>Trained models for multi-class sentiment classification</li>
+          <li>Analyzed confusion matrices for model performance</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Analise-de-Sentimentos" target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 4 -->
     <div class="card">
-      <img src="images/featuresEnergia.png" alt="Imagem do projeto de previsão de consumo de energia elétrica">
+      <img src="images/featuresEnergia.png" alt="Electricity consumption prediction project">
       <div class="card-content">
-        <h2>Previsão de Consumo de Energia Elétrica</h2>
-        <p>Este projeto tem como objetivo prever o consumo de energia elétrica com base em dados históricos, utilizando técnicas de Machine Learning. A ideia é treinar um modelo que aprenda os padrões de consumo de energia e consiga estimar a demanda futura</p>
-        <a href="https://github.com/juliaOdias/Previs-o-de-Demanda-Energia-Eletrica" target="_blank">Ver Projeto</a>
+        <h2>Electricity Consumption Prediction</h2>
+        <p>Predicting electricity consumption using historical data with Machine Learning techniques, estimating future demand patterns.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, Pandas, Matplotlib</p>
+        <ul>
+          <li>Created regression models to forecast energy consumption</li>
+          <li>Handled missing data and performed feature engineering</li>
+          <li>Visualized predictions against real data for validation</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Previs-o-de-Demanda-Energia-Eletrica" target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 5 -->
     <div class="card">
-      <img src="images/graficoPrecoCasas.png" alt="Imagem do projeto de previsão de preços de casas na Califórnia">
+      <img src="images/graficoPrecoCasas.png" alt="California housing price prediction project">
       <div class="card-content">
-        <h2>Previsão de Preços de Casas na Califórnia</h2>
-        <p>Projeto de regressão que prevê o preço de uma casa com base em características como renda mediana, idade da casa, número de quartos, população e localização geográfica.</p>
-        <a href="https://github.com/juliaOdias/Previsao-de-Precos-de-Casas-ML" target="_blank">Ver Projeto</a>
+        <h2>California Housing Price Prediction</h2>
+        <p>A regression project predicting house prices based on features such as median income, house age, number of rooms, population, and geographic location.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, Pandas, Matplotlib</p>
+        <ul>
+          <li>Developed regression models to predict housing prices</li>
+          <li>Performed data normalization and feature selection</li>
+          <li>Visualized model predictions versus actual prices</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Previsao-de-Precos-de-Casas-ML" target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 6 -->
     <div class="card">
-      <img src="images/imagemRoupas.png" alt="Imagem do projeto de classificação de imagens com Fashion MNIST">
+      <img src="images/imagemRoupas.png" alt="Fashion MNIST image classification project">
       <div class="card-content">
-        <h2>Classificação de Imagens com Fashion MNIST</h2>
-        <p>Modelo de Machine Learning que classifica imagens de roupas em categorias como camiseta, calça, vestido, entre outras, utilizando o dataset Fashion MNIST.</p>
-        <a href="https://github.com/juliaOdias/Classifica-o-de-imagens-com-Fashion-MNIST." target="_blank">Ver Projeto</a>
+        <h2>Fashion MNIST Image Classification</h2>
+        <p>A Machine Learning model classifying clothing images into categories such as t-shirts, pants, dresses, and more, using the Fashion MNIST dataset.</p>
+        <p><strong>Stack:</strong> Python, TensorFlow, Keras, NumPy</p>
+        <ul>
+          <li>Built CNN model for image classification</li>
+          <li>Implemented data augmentation to improve accuracy</li>
+          <li>Generated metrics and confusion matrix for evaluation</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Classifica-o-de-imagens-com-Fashion-MNIST." target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 7 -->
     <div class="card">
-      <img src="images/MatrizConfFakeNews.png" alt="Imagem do projeto de detecção de fake news">
+      <img src="images/MatrizConfFakeNews.png" alt="Fake news detection project">
       <div class="card-content">
-        <h2>Detecção de Fake News</h2>
-        <p>Modelo de Machine Learning que classifica notícias como falsas ou verdadeiras com base em características linguísticas e contextuais.</p>
-        <a href="https://github.com/juliaOdias/Fake-News-Detection" target="_blank">Ver Projeto</a>
+        <h2>Fake News Detection</h2>
+        <p>A Machine Learning model classifying news as fake or real based on linguistic and contextual features.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, Pandas, NLTK</p>
+        <ul>
+          <li>Processed textual news data for classification</li>
+          <li>Implemented TF-IDF and feature extraction techniques</li>
+          <li>Trained classifiers to distinguish real vs fake news</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Fake-News-Detection" target="_blank">View Project</a>
       </div>
     </div>
 
+    <!-- Project 8 -->
     <div class="card">
-      <img src="images/previsaobolsa.png" alt="Imagem do projeto de segmentação de tumores em imagens médicas">
+      <img src="images/previsaobolsa.png" alt="Stock price prediction project">
       <div class="card-content">
-        <h2>Previsão de Preços de Ações</h2>
-        <p>Este projeto aplica uma rede neural LSTM para prever o preço de fechamento diário da ação Apple (AAPL). O objetivo é demonstrar como modelos de séries temporais (LSTM) conseguem aprender padrões históricos e prever movimentos de curto prazo no mercado.</p>
-        <a href="https://github.com/juliaOdias/Prever-fechamento-diario" target="_blank">Ver Projeto</a>
+        <h2>Stock Price Prediction</h2>
+        <p>This project applies an LSTM neural network to predict the daily closing price of Apple (AAPL) stock. It demonstrates how time series models learn historical patterns and predict short-term market movements.</p>
+        <p><strong>Stack:</strong> Python, TensorFlow, Keras, Pandas, NumPy</p>
+        <ul>
+          <li>Developed LSTM model for time series forecasting</li>
+          <li>Performed data normalization and sequence creation</li>
+          <li>Visualized predictions vs actual stock prices</li>
+        </ul>
+        <a href="https://github.com/juliaOdias/Prever-fechamento-diario" target="_blank">View Project</a>
       </div>
     </div>
+
   </main>
 
   <footer>
-    <p>Desenvolvido por Julia • 2025</p>
+    <p>Developed by Julia • 2025</p>
   </footer>
 </body>
 </html>
-
